@@ -37,7 +37,7 @@ jobs:
         if: success() && github.event_name == 'push'
         uses: mr-smithers-excellent/docker-build-push@v7
         with:
-          image: archanareddycse/githubactions
+          image: woow404/q2:latest
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
